@@ -18,6 +18,19 @@ export class NewsapiservicesService {
   //businessapiurl
   businessApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=265ccb624c9f4a1486dffdd07784c2c8";
 
+  //scienceapiurl
+  scienceApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=265ccb624c9f4a1486dffdd07784c2c8";
+
+  //sportsapiurl
+  sportsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=265ccb624c9f4a1486dffdd07784c2c8";
+
+  //healthapiurl
+  healthApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=265ccb624c9f4a1486dffdd07784c2c8";
+
+  //entertainmentapiurl
+  entertainmentApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=265ccb624c9f4a1486dffdd07784c2c8";
+
+
   //topheading()
   topHeading():Observable<any>
   {
@@ -30,10 +43,34 @@ export class NewsapiservicesService {
     return this._http.get(this.techApiUrl);
   }
 
-  //technews()
+  //sportsnews()
+  sportsNews():Observable<any>
+  {
+    return this._http.get(this.sportsApiUrl);
+  }
+
+  //healthnews()
+  healthNews():Observable<any>
+  {
+    return this._http.get(this.healthApiUrl);
+  }
+
+  //businessnews()
   businessNews():Observable<any>
   {
     return this._http.get(this.businessApiUrl);
+  }
+
+  //entertainmentnews()
+  entertainmentNews():Observable<any>
+  {
+    return this._http.get(this.entertainmentApiUrl);
+  }
+
+  //sciencenews()
+  scienceNews():Observable<any>
+  {
+    return this._http.get(this.scienceApiUrl);
   }
 
 }
