@@ -7,7 +7,7 @@
       "type": "pwa-chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
-      "url": "https://newsapi-since-testing.netlify.app/"
+      "url": "http://localhost:4200",
     },
     {
       "name": "ng test",
